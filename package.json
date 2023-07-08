@@ -1,0 +1,21 @@
+{
+  "name": "x-men-electron",
+  "version": "1.0.0",
+  "description": "Projeto da Dev em Dobro adaptada para o electron!",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/GustaDaHora/X-MEN-electron"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "Gustavo da Hora",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.2.0"
+  }
+}
