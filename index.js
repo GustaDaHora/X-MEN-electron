@@ -48,12 +48,33 @@ if (process.env.NODE_ENV !== 'production') {
         label: 'Dev',
         submenu: [
             {
-                label: 'debug',
+                label: 'Debug',
                 accelerator: process.platform === 'win32' ? "Ctrl+Shift+I" : 'Cmd+Alt+I',
                 click(item, focusedwindow) {
-                    focusedwindow.toggleDevTools()
+                    focusedwindow.toggleDevTools();
+                }
+            },
+            {
+                label: 'Fullscreen',
+                accelerator: 'F11',
+                click(item, focusedwindow) {
+                    focusedwindow.setFullScreen(!focusedwindow.isFullScreen());
+                }
+            },
+            {
+                label: 'Reload',
+                accelerator: 'CmdOrCtrl+R',
+                click(item, focusedwindow) {
+                    if (focusedwindow) focusedwindow.reload();
+                }
+            },
+            {
+                label: 'Force Reload',
+                accelerator: 'CmdOrCtrl+Shift+R',
+                click(item, focusedwindow) {
+                    if (focusedwindow) focusedwindow.webContents.reloadIgnoringCache();
                 }
             }
         ]
-    })
+    });
 }
