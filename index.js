@@ -34,6 +34,12 @@ const menuTemplate = [
                 }
             },
             {
+                label: 'Repositório',
+                click() {
+                    shell.openExternal('https://github.com/GustaDaHora/X-MEN-electron')
+                }
+            },
+            {
                 label: 'Linkedin',
                 click() {
                     shell.openExternal('https://www.linkedin.com/in/gustavo-dahora')
