@@ -15,6 +15,7 @@ Instale as dependências necessárias:
 
 Agora você está pronto para executar aplicativo! Digite o seguinte comando:
 ```npm start```
+
 Contribuição
 Contribuições são bem-vindas! Se você quiser melhorar o X-MEN Electron, sinta-se à vontade para abrir uma issue ou enviar um pull request. Juntos, podemos tornar esta aplicação ainda mais incrível para todos os fãs dos X-Men.
 
